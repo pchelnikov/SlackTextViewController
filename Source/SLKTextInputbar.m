@@ -19,8 +19,6 @@ NSString * const SLKTextInputbarDidMoveNotification =   @"SLKTextInputbarDidMove
 
 @interface SLKTextInputbar ()
 
-@property (nonatomic, strong) UIView *hairlineView;
-
 @property (nonatomic, strong) NSLayoutConstraint *textViewBottomMarginC;
 @property (nonatomic, strong) NSLayoutConstraint *contentViewHC;
 @property (nonatomic, strong) NSLayoutConstraint *leftButtonWC;
@@ -47,6 +45,7 @@ NSString * const SLKTextInputbarDidMoveNotification =   @"SLKTextInputbarDidMove
 @implementation SLKTextInputbar
 @synthesize textView = _textView;
 @synthesize contentView = _contentView;
+@synthesize hairlineView = _hairlineView;
 @synthesize inputAccessoryView = _inputAccessoryView;
 @synthesize hidden = _hidden;
 
